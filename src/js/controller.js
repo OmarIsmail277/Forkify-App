@@ -108,6 +108,10 @@ const controlBookmarks = function () {
   bookmarksView.render(model.state.bookmarks);
 };
 
+const newFeature = function () {
+  console.log('Welcome to the new feature');
+};
+
 const controlAddRecipe = async function (newRecipe) {
   try {
     // Show loading spinner
@@ -155,6 +159,7 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature();
   // controlServings(); // won't work cuz recipes not arrive yet from API(async issue)
 };
 
