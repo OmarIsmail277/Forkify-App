@@ -110,6 +110,7 @@ const controlBookmarks = function () {
 
 const newFeature = function () {
   console.log('Welcome to the new feature');
+  console.log('Welcome to the new feature Again! Deployed!');
 };
 
 const controlAddRecipe = async function (newRecipe) {
